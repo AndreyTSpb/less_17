@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 body{
@@ -21,9 +23,31 @@ p{
     font-weight: 300;
 }
 
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
 /* ===== HEADER BLOCK ===== */
+.header-block{
+    height: 800px;
+    background-color:#ccc;
+    background:url('../img/bg/first_slider_bg.jpg') center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo .logo-img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 39px;
+    padding-bottom: 14px;
+}
 /* logotext in header */
-.logo-text{
+.logo .logo-text{
     /* Style for "WordPress" */
     color: #ffffff;
     font-family: Roboto;
@@ -31,6 +55,10 @@ p{
     font-weight: 500;
     line-height: 24px;
     text-transform: uppercase;
+}
+
+.header-text{
+    margin: 0 auto;
 }
 
 /* yellow text on slider of header */
@@ -42,6 +70,7 @@ p{
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
+    margin: 0 auto;
 }
 
 /* Style for "это просто" */
