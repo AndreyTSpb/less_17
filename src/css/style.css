@@ -58,7 +58,7 @@ h2{
 }
 /* ===== HEADER BLOCK ===== */
 .header-block{
-    height: 800px;
+    min-height: 800px;
     background-color:#ccc;
     background:url('../img/bg/first_slider_bg.jpg') center center;
     background-size: cover;
@@ -196,7 +196,7 @@ h2{
 /* ==== BLOCK TWO  ==== */
 .block-two{
     text-align: center;
-    height: 604px;
+    min-height: 604px;
     background-color: #efefef;
     padding-top: 85px;
 }
@@ -225,14 +225,14 @@ h2{
 
 .block-two .wrapper-block{
     position: relative;
+    display: flex;
+    justify-content: space-between;
     margin-top: 45px;
     margin-bottom: 75px;
 }
 
 .block-two .wrapper-block .wrapper-item{
     width: 339px;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .block-two .wrapper-block :first-child{
@@ -259,63 +259,94 @@ h2{
 /* ==== BLOCK TREE ==== */
 
 .block-tree{
-    position: relative;
-    height: 550px;
+    min-height: 550px;
     background: #fff;
 }
 
-.block-tree .what-is-it-optimization{
-    width: 100%;
-    height: 502px;
-    margin-top: 48px;
-    position: absolute;
+/*див с картинкой внутри*/
+.bg-image-girl{
     background-image: url("../img/bg/only_girl_bg.jpg");
     background-repeat: no-repeat;
-} 
+    background-position: 0px 48px;
+}
+.block-tree .what-is-it-optimization{
+    width: 100%;
+    min-height: 502px;
+    margin-top: 48px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.block-tree .text-block-tree{
+    width: 750px;
+    margin-top: 92px;
+    /* margin-right: 50px; */
+}
 
 /* Style for "Что такое" */
-.header-text-block-tree{
+.block-tree .header-text-block-tree h2{
     color: #299cbd;
     font-family: "Roboto-Black";
 }
 
-/* Style for "bg image" */
-.bg-img-block-tree{
-    width: 868px;
-    height: 502px;
-    background-image: url("../img/bg/only_girl_bg.jpg");
-}
 
 /* Style for "На простор" */
-.bg-block-tree p {  
+.block-tree .body-text-block-tree{
+    margin-top: 25px;
+}
+.block-tree .body-text-block-tree p{  
+    display: inline-block;
     color: #4a4a4a;
+    font-size: 17px;
+    font-weight: 300;
     line-height: 27px;
     /* Text style for "На простор" */
     font-family: "Roboto-Light";
+    padding-bottom: 15px;
 }
 
 /* Text style for "Мы научим" */
-.text-body-bold{
+.block-tree .body-text-block-tree p span{
     font-family: "Roboto-Bold";
     font-weight: 700;
 }
+
 /* ==== END BLOCK TREE ==== */
 
 /* ==== BLOCK FOUR ==== */
 .bg-block-four{
     background-image: url("../img/bg/second_slider_bg.jpg");
-    width: 1920px;
     height: 447px;
     background-color: #2c2c2c;
 }
+.block-four .wrapper-four{
+    min-height: 447px;
+}
 
 /* Style for "По окончан" */
-.header-text-block-four{
+.block-four .header-text-block-four{
+    text-align: center;
+    padding-top: 86px;
+}
+.block-four .header-text-block-four h2{
     color: #efefef;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.block-four .wrapper-finish-items{
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+.block-four .wrapper-finish-items .wrapper-finish-item{
+    width: 200px;
+    text-align: center;
 }
 
 /* Style for "Правильно" */
-.text-block-four{
+.block-four .wrapper-finish-items .text-finish-item{
+    margin-top: 26px;
     color: #efefef;
 }
 
@@ -324,16 +355,37 @@ h2{
 /* ==== BLOCK PRIZE ==== */
 
 /* Style for "Для всех у" */
-.header-text-block-prize{
+.section-prize{
+    min-height: 628px;
+}
+.section-prize .img-prize{
+    display: block;
+    margin: 0 auto;
+    margin-top: 86px;
+}
+.section-prize .header-text-block-prize{
+    margin-top: 42px;
     font-weight: 400;
+    text-align: center;
+
 }
 
 /* ==== END BLOCK PRIZE ==== */
 
-/* ==== BLCK SIX ==== */
+/* ==== FREE FIRST WEBINAR ==== */
 
-.bg-block-six{
+.free-first-webinar{
     background-color: #fff;
+    min-height: 515px;
+}
+.free-first-webinar .free-first-img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 82px;
+}
+.free-first-webinar h2{
+    margin-top: 37px;
+    text-align: center;
 }
 
 .text-time{
@@ -345,28 +397,40 @@ h2{
     text-transform: uppercase;
 }
 
+
 .sub-text-six{
     /* Style for "Успейте за" */
     color: #4a4a4a;
     font-size: 23px;
     font-weight: 400;
+    text-align: center;
+    margin-top: 25px;
 }
 
-/* ==== END BLOCK SIX ==== */
+/* ==== END FREEFIRST WEBINAR ==== */
 
 /* ==== BLOCK FOOTER ==== */
 
-.bg-footer{
+.footer{
     /* Style for "Rectangle" */
-    width: 1920px;
-    height: 166px;
+    min-height: 166px;
     background-color: #1a1a1a;
 }
 
-.footer-text{
+.footer .footer-text-wraper{
+    margin: 0 auto;
+    padding-top: 61px;
+    padding-bottom: 61px;
+}
+
+.footer .footer-text{
+    text-align: center;
     color: #888888;
     font-size: 15px;
     font-weight: 300;
+    line-height: 21px;
+}
+.footer .footer-text-underline{
     text-decoration: underline;
 }
 
