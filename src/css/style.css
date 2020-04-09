@@ -258,10 +258,20 @@ h2{
 
 /* ==== BLOCK TREE ==== */
 
-/* bg-color for block */
-.bg-block-tree{
+.block-tree{
+    position: relative;
+    height: 550px;
     background: #fff;
 }
+
+.block-tree .what-is-it-optimization{
+    width: 100%;
+    height: 502px;
+    margin-top: 48px;
+    position: absolute;
+    background-image: url("../img/bg/only_girl_bg.jpg");
+    background-repeat: no-repeat;
+} 
 
 /* Style for "Что такое" */
 .header-text-block-tree{
