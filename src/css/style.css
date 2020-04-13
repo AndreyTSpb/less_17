@@ -339,6 +339,17 @@ h2{
     display: flex;
     justify-content: space-between;
 }
+.block-four .finish-item-radius{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 115px;
+    border-radius: 100%;
+    background-color: #b4e2ff;
+    margin: 0 auto;
+}
+
 .block-four .wrapper-finish-items .wrapper-finish-item{
     width: 200px;
     text-align: center;
@@ -378,11 +389,14 @@ h2{
     background-color: #fff;
     min-height: 515px;
 }
+
 .free-first-webinar .free-first-img {
     display: block;
     margin: 0 auto;
     padding-top: 82px;
 }
+
+
 .free-first-webinar h2{
     margin-top: 37px;
     text-align: center;
@@ -429,6 +443,9 @@ h2{
     font-size: 15px;
     font-weight: 300;
     line-height: 21px;
+}
+.footer .footer-text a{
+    color: #888888;
 }
 .footer .footer-text-underline{
     text-decoration: underline;
